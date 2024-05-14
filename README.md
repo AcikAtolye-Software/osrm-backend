@@ -54,7 +54,7 @@ We base our Docker images ([backend](https://github.com/Project-OSRM/osrm-backen
 
 Download OpenStreetMap extracts for example from [Geofabrik](http://download.geofabrik.de/)
 
-    wget http://download.geofabrik.de/europe/germany/berlin-latest.osm.pbf
+    wget https://download.geofabrik.de/europe/turkey-latest.osm.pbf
 
 Pre-process the extract with the car profile and start a routing engine HTTP server on port 5000
 
