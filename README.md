@@ -65,9 +65,9 @@ The flag `-v "${PWD}:/data"` creates the directory `/data` inside the docker con
     docker run -t -v "${PWD}:/data" ghcr.io/project-osrm/osrm-backend osrm-partition /data/turkey-latest.osrm || echo "osrm-partition failed"
     docker run -t -v "${PWD}:/data" ghcr.io/project-osrm/osrm-backend osrm-customize /data/turkey-latest.osrm || echo "osrm-customize failed"
 
-Note there is no `berlin-latest.osrm` file, but multiple `berlin-latest.osrm.*` files, i.e. `berlin-latest.osrm` is not file path, but "base" path referring to set of files and there is an option to omit this `.osrm` suffix completely(e.g. `osrm-partition /data/berlin-latest`).
+Note there is no `turkey-latest.osrm` file, but multiple `turkey-latest.osrm.*` files, i.e. `turkey-latest.osrm` is not file path, but "base" path referring to set of files and there is an option to omit this `.osrm` suffix completely(e.g. `osrm-partition /data/turkey-latest`).
 
-    docker run -t -i -p 5000:5000 -v "${PWD}:/data" ghcr.io/project-osrm/osrm-backend osrm-routed --algorithm mld /data/berlin-latest.osrm
+    docker run -t -i -p 5000:5000 -v "${PWD}:/data" ghcr.io/project-osrm/osrm-backend osrm-routed --algorithm mld /data/turkey-latest.osrm
 
 Make requests against the HTTP server
 
